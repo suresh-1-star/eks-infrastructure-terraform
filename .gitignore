@@ -1,0 +1,31 @@
+# Terraform working directories
+**/.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Allow non-sensitive production example configuration
+!bootstrap/terraform.tfvars
+!environments/prod/terraform.tfvars
+
+# Terraform override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform CLI configuration
+.terraformrc
+terraform.rc
+
+# Standalone reusable module lock file
+/modules/vpc/.terraform.lock.hcl
